@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <title>Restaurant</title>
+</head>
+<body>
+    <!------------------------------------------NAVBAR-------------------------------------------------------------->
+    <section id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="https://atri-apps.github.io/restaurant_website/app-assets/616da2c309aa0721dacedf0a_logo-restaurante-x-template.svg" id="logoimg">
+            </div>
+            <div class="menu">
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#mmenu">Menu</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+            </div>
+            <div class="navbtn">
+                <a href="#" class="btn" style="background-color: white;color:black;border:1px solid #cccccc;">Order Online</a>
+                <a href="#" class="btn">Book a table</a>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------LANDING PAGE-------------------------------------------------------------->
+    <section id="landpg">
+        <div id="descd">
+            <div id="desct">
+                <div class="intxt" >
+                    <div style="color:black;">The Best Burgers</div>
+                    <div>In your State.</div>
+                </div>
+                <p id="desc">"At the base level, a burger is a piece of meat and a bun with something on it. It’s simple but it seems to make a lot of people happy." - Danny Meyers</p>
+            </div>
+            <img id="descimg" src="https://atri-apps.github.io/restaurant_website/app-assets/616d9a0b651769674022e7ba_home-hero-restaurante-x-template.jpeg">
+        </div>    
+    </section>
+    <!------------------------------------------PLATOFRMS-------------------------------------------------------------->
+    <section id="Platofrms">
+        <div id="wherewr">
+            <div id="wwrh">Platforms to order</div>
+            <div style="column-gap: 30px;">
+                <img id="wwrimgz" src="image-removebg-preview (3).png">
+                <img id="wwrimgs" src="image-removebg-preview (5).png">
+                <img id="wwrimgu" src="data:image/png;base64,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">
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------MENU------------------------------------------------------------->
+
+    <section id="menu">
+        <div id="menuh"> Browse across all varities</div>
+        <div id="cards">
+            <div id="mcard">
+                <img id="cardimg" src="breakfast.png">
+                <p id="cardtitle">Breakfast</p>
+                <p id="cardp">We have a variety of Breakfast meals made for you to start your day energetically.</p>
+                <a href="" id="cardlink"><p>Order Breakfast</p></a>
+            </div>
+            <div id="mcard">
+                <img id="cardimg" src="food.png">
+                <p id="cardtitle">Main Course</p>
+                <p id="cardp">Juicy Burger Made just for you to satisfy both your craving and hunger.</p>
+                <a href="" id="cardlink"><p>Order Main Course</p></a>
+            </div>
+            <div id="mcard">
+                <img id="cardimg" src="cocktail.png">
+                <p id="cardtitle">Drinks</p>
+                <p id="cardp">A Large variety of Drinks to reduce your thrist level and give you chill experience.</p>
+                <a href="" id="cardlink"><p>Order Drinks</p></a>
+            </div>
+            <div id="mcard">
+                <img id="cardimg" src="tea-stand.png">
+                <p id="cardtitle">Desserts</p>
+                <p id="cardp">Craving for some sweet? Try our variety of fresh hand made desserts.</p>
+                <a href="" id="cardlink"><p>Order Desserts</p></a>
+            </div>
+        </div>
+    </section>    
+
+ <!------------------------------------------------ABOUT US  -------------------------------------------------------->
+    
+    <section >
+        <div id="about">
+            <div id="abouti">
+                <img id="aboutimg" src="https://atri-apps.github.io/restaurant_website/app-assets/616d9a0bdba0fb13cfd32fc0_about-home-restaurante-x-template-p-1080.jpeg">
+                <div id="abtcard">
+                    <p id="abtcardh">Visit us at:</p>
+                    <p id="abtcardp"><img id="abtcardpimg" src="place.png">&nbsp; &nbsp;XYZ STREET, Uttar Pradesh</p>
+                    <p id="abtcardp"><img id="abtcardpimg" src="telephone.png">&nbsp;&nbsp; 9876543210</p>
+                </div>
+            </div>
+        <div id="aboutmain">
+            <div id="abouth" >About Us</div>
+            <p id="aboutxt">Welcome to The Burger Joint Restaurant! We’ve got everything you’re looking for, from the Classic, to fusion flavors like the Kimchi, to the Veggie, for our vegetarian friends.</p>
+            <p id="aboutxt"> We’re committed to serving delicious, fresh fare that will make you re-think how burgers should taste. Check out our menu for our variety of hand-crafted burgers and see why people come to us for the Best Burger in Houston.</p>
+            <p></p>
+            <p></p>
+        </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------MENU------------------------------------------------------>
+    <section>
+        <div id="mmenu">
+            <div id="mmenuh">Browse our menu</div>
+            <div id="mcards">
+                <div id="menucard">
+                    <div id="price">&#8377; 199.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646__340.jpg">
+                      
+                <div id="mcardname">Classic Burger</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 149.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2020/12/11/12/25/ice-cream-5822680_960_720.jpg">
+                      
+                <div id="mcardname">Cold Coffee</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 99.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2015/05/22/16/00/french-fries-779292__340.jpg">
+                      
+                <div id="mcardname">Classic Fries</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 149.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2021/06/09/12/00/potato-wedges-6323211__340.jpg">
+                      
+                <div id="mcardname">Potato Wedges</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+            </div>
+            <div id="mcards" style="padding-top: 1%;">
+                <div id="menucard">
+                    <div id="price">&#8377; 30.0</div>
+                    <img id="mcardimg" src="https://media.istockphoto.com/id/1148955849/photo/soft-serve-ice-cream-icy-desserts.jpg?s=612x612&w=0&k=20&c=qGKygGH-Oe1eeaITbLsl2wd3Ygd61dAs0wQbB6u007g=">
+                      
+                <div id="mcardname">Soft Serve</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 79.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2019/06/17/20/13/soft-drink-4280835__340.jpg">
+                      
+                <div id="mcardname">Soft Drinks</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 99.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2016/11/21/16/59/baked-goods-1846460__340.jpg">
+                      
+                <div id="mcardname">Pastries</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+                <div id="menucard">
+                    <div id="price">&#8377; 129.0</div>
+                    <img id="mcardimg" src="https://cdn.pixabay.com/photo/2020/08/03/06/29/sandwich-5459309__340.jpg">
+                      
+                <div id="mcardname">Egg Toast</div>  
+                <div id="mcardd">Lorem ipsum dolor sit amet dolor consectetur adipiscing elit</div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------FOOTER-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+      <img src="https://atri-apps.github.io/restaurant_website/app-assets/616da2c309aa0721dacedf0a_logo-restaurante-x-template.svg">
+            <h3>Restaurante X</h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>XYZ STREET</span>
+                    Uttar Pradesh, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>9876543210</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:007singhaldivyansh@gmail.com">restaurante_x</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Best Burgers In your state. .</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
